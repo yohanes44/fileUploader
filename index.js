@@ -49,6 +49,14 @@ app.post("/api/addFile", upload.single("upfile"), (req, res)=>{
 })
 
 
+app.get("/api/addFile", upload.single("upfile"), (req, res)=>{
+     
+  res.send(allFiles)
+
+})
+
+
+
 
 
 
